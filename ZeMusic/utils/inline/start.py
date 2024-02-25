@@ -8,9 +8,9 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="𖣂 ضيفني 𖣂", url=f"https://t.me/{app.username}?startgroup=true"
+                text=". aDD Me To Your Groups .", url=f"https://t.me/{app.username}?startgroup=true"
             ),
-            InlineKeyboardButton(text="𖣂 الدعم 𖣂", url=config.SUPPORT_CHAT),
+            InlineKeyboardButton(text=". Support .", url=config.SUPPORT_CHAT),
         ],
     ]
     return buttons
@@ -20,18 +20,18 @@ def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="𖣂 ضيفني 𖣂",
+                text=". aDD Me To Your Groups .",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
-        [InlineKeyboardButton(text="𖣂 **الـاوامر** 𖣂", callback_data="settings_back_helper")],
+        [InlineKeyboardButton(text="**. AssistanT .**", callback_data="settings_back_helper")],
         [
-            InlineKeyboardButton(text="𖣂 👤 مطور البوت 𖣂", user_id=config.OWNER_ID),
-            InlineKeyboardButton(text="𖣂 الدعم 𖣂", url=config.SUPPORT_CHAT),
+            InlineKeyboardButton(text="- BoT OWNER .", user_id=config.OWNER_ID),
+            InlineKeyboardButton(text="- SUPPORT .", url=config.SUPPORT_CHAT),
         ],
         [
-            InlineKeyboardButton(text="𖣂 قناة المطور 𖣂", url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text="𖣂 قناة السورس 𖣂", url=f"https://t.me/Source_Ze"),
+            InlineKeyboardButton(text=". cHanneL Bot .", url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=". cL Source .", url=f"https://t.me/W_4_M"),
         ],
     ]
     return buttons
