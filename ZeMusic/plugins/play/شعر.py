@@ -6,11 +6,11 @@ from ZeMusic import app
 import random
     
 
-@app.on_message(command([f"شعر", "شع", "ش", "{BOT_USERNAME} شعر"]))
+@app.on_message(command([f"شعر", "عصوم", "ش", "{BOT_USERNAME} شعر"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(8,20)
     url = f"https://t.me/saresnx/{rl}"
-    await client.send_voice(message.chat.id,url,caption="🔥 ¦ تـم اختيـار الشعر لـك",
+    await client.send_voice(message.chat.id,url,caption="🫶 ¦ عصوم بيحبك ",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
