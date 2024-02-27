@@ -56,12 +56,12 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "—————————◉"
     buttons = [
                 [
-            InlineKeyboardButton(text=". ReSuMe .", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text=". PaUsE .", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text=". RepLaY .", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
 
-            InlineKeyboardButton(text=". skip .", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text=". sToP .", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
             InlineKeyboardButton(text="- So MiiiiiX", url=f"https://t.me/P_T_I"),
         
     return buttons
