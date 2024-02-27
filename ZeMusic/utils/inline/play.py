@@ -52,29 +52,35 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "———————◉——"
     elif 80 <= umm < 95:
         bar = "————————◉—"
-
+    else:
         bar = "—————————◉"
-                
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+    buttons = [
+                [
+            InlineKeyboardButton(text=". ReSuMe .", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text=". PaUsE .", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text=". RepLaY .", callback_data=f"ADMIN Replay|{chat_id}"),
+        ],[
+            InlineKeyboardButton(text=". skip .", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text=". sToP .", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],[
             InlineKeyboardButton(text="- So MiiiiiX", url=f"https://t.me/P_T_I"),
-        
+        ],[
+            InlineKeyboardButton(text=". aDD Me To Your Groups .", url=f"https://t.me/{app.username}?startgroup=true")],
+    ]
     return buttons
 
 
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text=". ReSuMe .", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text=". PaUsE .", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text=". RepLaY .", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),                                                                                                                                                                                                                                                                                                                          
+            InlineKeyboardButton(text=". skip .", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text=". sToP .", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],[
+            InlineKeyboardButton(text="- So MiiiiiX", url=f"https://t.me/P_T_I"),
         ],[
             InlineKeyboardButton(text=". aDD Me To Your Groups .", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
@@ -144,7 +150,7 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
                 callback_data=f"forceclose {query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="▢",
+                text="𖣂 𝒓𝒆𝒔𝒖𝒎𝒆 𖣂",
                 callback_data=f"slider F|{query_type}|{query}|{user_id}|{channel}|{fplay}",
             ),
         ],
