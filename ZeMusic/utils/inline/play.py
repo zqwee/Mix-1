@@ -52,7 +52,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "———————◉——"
     elif 80 <= umm < 95:
         bar = "————————◉—"
-    else
+
         bar = "—————————◉"
                 
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
