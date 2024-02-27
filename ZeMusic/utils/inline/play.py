@@ -78,9 +78,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text=". RepLaY .", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
             InlineKeyboardButton(text=". skip .", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text=". sToP .", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],[
-            InlineKeyboardButton(text="- So MiiiiiX", url=f"https://t.me/P_T_I"),
+            InlineKeyboardButton(text=". sToP .", callback_data=f"ADMIN Stop|{chat_id}"),                                                                                                                                                                                                                                                                                                                          
         ],[
             InlineKeyboardButton(text=". aDD Me To Your Groups .", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
