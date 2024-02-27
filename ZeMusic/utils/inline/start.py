@@ -24,7 +24,7 @@ def private_panel(_):
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
-        [InlineKeyboardButton(text="**. AssistanT .**", callback_data="settings_back_helper")],
+        [InlineKeyboardButton(text=‏- Help ."", callback_data="settings_back_helper")],
         [
             InlineKeyboardButton(text="- BoT OWNER .", user_id=config.OWNER_ID),
             InlineKeyboardButton(text="- SUPPORT .", url=config.SUPPORT_CHAT),
